@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="my-first-blog, Vast612520">
+    <meta name="keywords" content="my-first-blog, С�ۤβ���">
     <meta name="description" content="正文内容啥小区的保安啊,还要初中文凭
 ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>my-first-blog | Vast612520</title>
+    <title>my-first-blog | С�ۤβ���</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -43,7 +43,7 @@
                         
                         <img src="/medias/logo.png" class="logo-img hide-on-small-only">
                         
-                        <span class="logo-span">Vast612520</span>
+                        <span class="logo-span">С�ۤβ���</span>
                     </a>
                 </div>
                 
@@ -56,7 +56,7 @@
             
             <i class="fa fa-home"></i>
             
-            <span>Index</span>
+            <span>首页</span>
         </a>
     </li>
     
@@ -65,7 +65,7 @@
             
             <i class="fa fa-tags"></i>
             
-            <span>Tags</span>
+            <span>标签</span>
         </a>
     </li>
     
@@ -74,7 +74,7 @@
             
             <i class="fa fa-bookmark"></i>
             
-            <span>Categories</span>
+            <span>分类</span>
         </a>
     </li>
     
@@ -83,7 +83,7 @@
             
             <i class="fa fa-archive"></i>
             
-            <span>Archives</span>
+            <span>归档</span>
         </a>
     </li>
     
@@ -92,7 +92,7 @@
             
             <i class="fa fa-user-circle-o"></i>
             
-            <span>About</span>
+            <span>关于</span>
         </a>
     </li>
     
@@ -101,7 +101,7 @@
             
             <i class="fa fa-address-book"></i>
             
-            <span>Friends</span>
+            <span>友链</span>
         </a>
     </li>
     
@@ -119,7 +119,7 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">Vast612520</div>
+        <div class="logo-name">С�ۤβ���</div>
         <div class="logo-desc">
             
             People with elementary degrees
@@ -136,7 +136,7 @@
                 
                 <i class="fa fa-fw fa-home"></i>
                 
-                Index
+                首页
             </a>
         </li>
         
@@ -145,7 +145,7 @@
                 
                 <i class="fa fa-fw fa-tags"></i>
                 
-                Tags
+                标签
             </a>
         </li>
         
@@ -154,7 +154,7 @@
                 
                 <i class="fa fa-fw fa-bookmark"></i>
                 
-                Categories
+                分类
             </a>
         </li>
         
@@ -163,7 +163,7 @@
                 
                 <i class="fa fa-fw fa-archive"></i>
                 
-                Archives
+                归档
             </a>
         </li>
         
@@ -172,7 +172,7 @@
                 
                 <i class="fa fa-fw fa-user-circle-o"></i>
                 
-                About
+                关于
             </a>
         </li>
         
@@ -181,7 +181,7 @@
                 
                 <i class="fa fa-fw fa-address-book"></i>
                 
-                Friends
+                友链
             </a>
         </li>
         
@@ -404,6 +404,20 @@
                 </div>
 
                 
+                    
+                    <div class="info-break-policy">
+                        <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
+                        17
+                    </div>
+                    
+
+                    
+                    <div class="info-break-policy">
+                        <i class="fa fa-clock-o fa-fw"></i>Read Times:&nbsp;&nbsp;
+                        1 Min
+                    </div>
+                    
+                
 				
 				
                     <div id="busuanzi_container_page_pv" class="info-break-policy">
@@ -555,7 +569,7 @@
                     <span class="reprint-tip">
                         <i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;Reprint please specify:
                     </span>
-                    <a href="https://github.com/vast612520/vast612520.github.io" class="b-link-green">Vast612520</a>
+                    <a href="https://vast612520.github.io" class="b-link-green">С�ۤβ���</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
                     <a href="/2020/12/20/my-first-blog/" class="b-link-green">my-first-blog</a>
                 </p>
@@ -666,6 +680,43 @@
 </div>
 
 
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('20')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + 'From: С�ۤβ���<br />'
+            + 'Author: gang<br />'
+            + 'Link: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
     </div>
     <div class="col l3 hide-on-med-and-down">
         <div class="toc-widget">
@@ -725,6 +776,9 @@
             <a href="https://hexo.io/" target="_blank">Hexo</a> 的
             <a href="https://github.com/vast612520" target="_blank">hexo-theme-matery</a>主题搭建.
 
+            
+                &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
+                <span class="white-color">92</span>
             
 
             
